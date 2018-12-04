@@ -10,8 +10,11 @@ import UIKit
 
 class NewContactViewController: UIViewController {
 
-    @IBAction func didTapSave(_ sender: Any) {
-    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+
+    @IBAction func saveNewContact(_ sender: Any) {
+        newContact(name: nameTextField.text!, phone: phoneTextField.text!)
         navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
@@ -19,6 +22,13 @@ class NewContactViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func newContact(name: String, phone: String) {
+        let newContact = Contact(context: CoreDataManager.context)
+        newContact.name = name
+        newContact.phone = phone
+        CoreDataManager.saveContext()
     }
     
 

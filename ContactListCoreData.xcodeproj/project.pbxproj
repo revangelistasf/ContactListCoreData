@@ -17,6 +17,7 @@
 		62437FF221B6D6890026ECF6 /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62437FF021B6D6890026ECF6 /* Contact+CoreDataClass.swift */; };
 		62437FF321B6D6890026ECF6 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62437FF121B6D6890026ECF6 /* Contact+CoreDataProperties.swift */; };
 		62437FF621B6D7A00026ECF6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62437FF521B6D7A00026ECF6 /* CoreDataManager.swift */; };
+		D14B345721B6EAE200117BD6 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B345621B6EAE200117BD6 /* ContactTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		62437FF021B6D6890026ECF6 /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
 		62437FF121B6D6890026ECF6 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		62437FF521B6D7A00026ECF6 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		D14B345621B6EAE200117BD6 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +66,14 @@
 		62437FD821B6C4900026ECF6 /* ContactListCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				D14B345921B6EC4300117BD6 /* View */,
+				D14B345821B6EB0C00117BD6 /* Controller */,
 				62437FF421B6D6910026ECF6 /* Entity */,
 				62437FD921B6C4900026ECF6 /* AppDelegate.swift */,
-				62437FDB21B6C4900026ECF6 /* ViewController.swift */,
-				62437FDD21B6C4900026ECF6 /* Main.storyboard */,
 				62437FE321B6C4900026ECF6 /* Assets.xcassets */,
 				62437FE521B6C4900026ECF6 /* LaunchScreen.storyboard */,
 				62437FE821B6C4900026ECF6 /* Info.plist */,
 				62437FE021B6C4900026ECF6 /* ContactListCoreData.xcdatamodeld */,
-				62437FEE21B6D2730026ECF6 /* NewContactViewController.swift */,
 				62437FF521B6D7A00026ECF6 /* CoreDataManager.swift */,
 			);
 			path = ContactListCoreData;
@@ -85,6 +86,24 @@
 				62437FF121B6D6890026ECF6 /* Contact+CoreDataProperties.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		D14B345821B6EB0C00117BD6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				62437FDB21B6C4900026ECF6 /* ViewController.swift */,
+				62437FEE21B6D2730026ECF6 /* NewContactViewController.swift */,
+				D14B345621B6EAE200117BD6 /* ContactTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D14B345921B6EC4300117BD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62437FDD21B6C4900026ECF6 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +181,7 @@
 				62437FDC21B6C4900026ECF6 /* ViewController.swift in Sources */,
 				62437FDA21B6C4900026ECF6 /* AppDelegate.swift in Sources */,
 				62437FEF21B6D2730026ECF6 /* NewContactViewController.swift in Sources */,
+				D14B345721B6EAE200117BD6 /* ContactTableViewCell.swift in Sources */,
 				62437FE221B6C4900026ECF6 /* ContactListCoreData.xcdatamodeld in Sources */,
 				62437FF621B6D7A00026ECF6 /* CoreDataManager.swift in Sources */,
 				62437FF221B6D6890026ECF6 /* Contact+CoreDataClass.swift in Sources */,
